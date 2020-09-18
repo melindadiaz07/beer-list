@@ -1,0 +1,15 @@
+<%= form_for @beer do |f| %>
+    <%= f.label :name %>:
+    <%= f.text_field :name %><br />
+  
+    <%= f.label "Style" %>:
+    <%= f.text_field :style %> <br />
+
+    <%= f.label "IBU" %>:
+    <%= f.text_field :ibu + " IBU" %> <br />
+
+    <%= f.label :alcohol %>:
+    <%= f.text_field :alcohol + "%" %> <br />
+  
+    <%= f.submit %>
+  <% end %>

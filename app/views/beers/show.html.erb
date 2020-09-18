@@ -1,0 +1,6 @@
+<h1> <%= @beer.name %> </h1>
+<h3> Style: <%= @beer.style %> </h3>
+<h3> IBU: <%= @beer.ibu %> </h3>
+<h3> Alcohol: <%= @beer.alcohol %> </h3>
+<br>
+<%= button_to "Edit Beer", edit_beer_path(@beer), method: "get" %>
